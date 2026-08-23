@@ -80,3 +80,45 @@ document.querySelectorAll(".reveal").forEach((el) => revealObserver.observe(el))
 
 // ---------- 5. Current year in the footer ----------
 document.getElementById("year").textContent = new Date().getFullYear();
+
+// ---------- 6. Contact form (Formspree) ----------
+const FORM_ENDPOINT = "https://formspree.io/f/xzepqkzy";
+const contactForm = document.getElementById("contactForm");
+const formStatus = document.getElementById("formStatus");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", async (e) => {
+    e.preventDefault(); // stay on the page instead of redirecting
+
+    // Endpoint not configured yet — tell the owner instead of failing silently
+    if (FORM_ENDPOINT.indexOf("YOUR_") === 0) {
+      formStatus.textContent = "Form endpoint is not configured yet — please use the email link above.";
+      formStatus.className = "form-status err";
+      return;
+    }
+
+    const data = Object.fromEntries(new FormData(contactForm));
+    formStatus.textContent = "Sending\u2026";
+    formStatus.className = "form-status";
+
+    try {
+      const res = await fetch(FORM_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (res.ok) {
+        formStatus.textContent = "Message sent \u2014 thank you!";
+        formStatus.className = "form-status ok";
+        contactForm.reset();
+      } else {
+        formStatus.textContent = "Something went wrong. Please email me directly instead.";
+        formStatus.className = "form-status err";
+      }
+    } catch {
+      formStatus.textContent = "Network error. Please email me directly instead.";
+      formStatus.className = "form-status err";
+    }
+  });
+}
