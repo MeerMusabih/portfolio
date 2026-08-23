@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meer Musabih Saleem — CV — AI/ML</title>
+<style>
+  :root {
+    --ink: #16181d;
+    --muted: #4b5563;
+    --accent: #0f3057;
+    --rule: #c9ced6;
+  }
+
+  * { box-sizing: border-box; }
+
+  @page { size: A4; margin: 10mm 12mm; }
+
+  html, body { margin: 0; padding: 0; }
+
+  body {
+    font-family: Calibri, Carlito, "Segoe UI", Arial, Helvetica, sans-serif;
+    font-size: 9.2pt;
+    line-height: 1.3;
+    color: var(--ink);
+    max-width: 186mm;
+    margin: 0 auto;
+    background: #fff;
+  }
+
+  @media screen {
+    body {
+      margin: 24px auto;
+      padding: 14mm 12mm;
+      box-shadow: 0 2px 14px rgba(0,0,0,.16);
+      background: #fff;
+      min-height: 269mm;
+    }
+  }
+  @media print {
+    body { margin: 0; padding: 0; box-shadow: none; max-width: none; }
+    a { text-decoration: none; }
+    .entry, li, .skills p { break-inside: avoid; }
+    h2 { break-after: avoid; }
+  }
+
+  a { color: inherit; }
+  @media screen { a:hover { text-decoration: underline; } }
+
+  /* ---------- Header ---------- */
+  header { text-align: center; margin-bottom: 7pt; }
+  h1 {
+    margin: 0;
+    font-size: 20pt;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--accent);
+    line-height: 1.1;
+  }
+  .headline {
+    margin: 2pt 0 3pt;
+    font-size: 10pt;
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .contact {
+    font-size: 8.8pt;
+    color: var(--muted);
+  }
+  .contact .sep { margin: 0 4pt; color: #9aa2ad; }
+
+  /* ---------- Sections ---------- */
+  section { margin-top: 7pt; }
+  h2 {
+    margin: 0 0 3.5pt;
+    font-size: 9.8pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: var(--accent);
+    border-bottom: 1.1pt solid var(--accent);
+    padding-bottom: 1.5pt;
+  }
+  section:first-of-type h2 { margin-top: 0; }
+
+  p.summary { margin: 0; text-align: left; hyphens: none; }
+
+  /* ---------- Entries ---------- */
+  .entry { margin-bottom: 5pt; }
+  .entry:last-child { margin-bottom: 0; }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10pt;
+  }
+  .row .title { font-weight: 700; font-size: 9.7pt; }
+  .row .meta {
+    color: var(--muted);
+    font-size: 8.7pt;
+    text-align: right;
+    white-space: nowrap;
+  }
+  .subtle { color: var(--muted); font-weight: 400; }
+
+  ul { margin: 1.5pt 0 0; padding-left: 13pt; }
+  li { margin: 0 0 1.6pt; padding-left: 1pt; }
+  li:last-child { margin-bottom: 0; }
+
+  /* ---------- Skills ---------- */
+  .skills p { margin: 0 0 1.8pt; }
+  .skills p:last-child { margin-bottom: 0; }
+  .skills b { font-weight: 700; }
+
+  /* ---------- Additional projects ---------- */
+  .mini { margin: 2pt 0 0; padding-left: 13pt; }
+
+  strong.metric { font-weight: 700; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Meer Musabih Saleem</h1>
+  <p class="headline">Artificial Intelligence &amp; Machine Learning — Software Engineering Student</p>
+  <p class="contact">
+    <a href="tel:03357503800">03357503800</a><span class="sep">|</span><a href="mailto:meermusabih.work@gmail.com">meermusabih.work@gmail.com</a><span class="sep">|</span><a href="https://www.linkedin.com/in/meer-musabih">linkedin.com/in/meer-musabih</a><span class="sep">|</span><a href="https://www.github.com/MeerMusabih">github.com/MeerMusabih</a>
+  </p>
+</header>
+
+<section aria-label="Professional Summary">
+  <h2>Professional Summary</h2>
+  <p class="summary">
+    AI/ML-focused Software Engineering student with hands-on machine learning internship experience building and
+    evaluating end-to-end ML systems: a Random Forest ranking model (Precision@20 <strong class="metric">0.70</strong> vs 0.40 baseline),
+    an NLP toxicity classifier (<strong class="metric">~86.4% accuracy, 0.950 ROC-AUC</strong>), LLM-powered AI agents, voice AI, and demand forecasting.
+    Applied Python ML stack (scikit-learn, Pandas, NumPy, FastAPI) across predictive analytics, NLP, ranking models,
+    feature engineering, generative AI, LLM applications, and conversational AI.
+  </p>
+</section>
+
+<section aria-label="Technical Skills">
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <p><b>AI / Machine Learning:</b> Machine Learning, Predictive Analytics, NLP (Natural Language Processing), Classification,
+       Ranking Models, Feature Engineering, Model Evaluation, Generative AI, LLM Applications, AI Agents, Conversational AI, Voice AI</p>
+    <p><b>Python / ML Stack:</b> Python, Pandas, NumPy, scikit-learn, FastAPI</p>
+    <p><b>LLMs / AI Tools:</b> Ollama, Qwen, Llama, Anthropic / Claude, Microsoft Copilot Studio, n8n</p>
+    <p><b>Development / Data:</b> Git, GitHub, REST APIs, JSON, Data Analysis</p>
+    <p><b>Software Engineering:</b> C++, JavaScript, React, Node.js, Express, MongoDB (MERN), Flutter / Dart</p>
+  </div>
+</section>
+
+<section aria-label="Experience">
+  <h2>Experience</h2>
+
+  <div class="entry">
+    <div class="row">
+      <span class="title">Machine Learning Intern — <span class="subtle">FlyRank AI</span></span>
+      <span class="meta">Content-Refresh Ranking Capstone</span>
+    </div>
+    <ul>
+      <li>Built a Random Forest ranking model (scikit-learn, 300 trees, class-balanced, numeric + categorical features) over
+          ~30,000 content-page records from the internship data warehouse to rank pages by priority for human content-refresh review.</li>
+      <li>Achieved <strong class="metric">Precision@20 of 0.70 and Precision@50 of 0.68</strong>, versus a 0.40 / 0.36 rule-based baseline,
+          using a client-grouped train/test split that prevented client leakage between training and testing.</li>
+      <li>Engineered a 32-feature modeling set from 44 original columns, excluded target and leakage variables, and surfaced top
+          predictive signals — 90-day impressions, average search position, days with impressions, content age, character/word count, CTR, pageviews, scroll rate.</li>
+      <li>Delivered a ranked review queue with priority tiers and reason codes as decision support, helping human reviewers identify pages likely to deserve a content refresh.</li>
+    </ul>
+  </div>
+</section>
+
+<section aria-label="AI and Machine Learning Projects">
+  <h2>AI / ML Projects</h2>
+
+  <div class="entry">
+    <div class="row">
+      <span class="title">PersonaGuard AI — AI Recruitment Intelligence</span>
+      <span class="meta">Python · NLP · Sentence Transformers · Logistic Regression · FastAPI</span>
+    </div>
+    <ul>
+      <li>Built an AI recruitment-intelligence system that analyzes publicly available social-media information to assist recruitment screening using NLP and machine-learning classification.</li>
+      <li>Trained a Logistic Regression toxicity classifier on Sentence Transformer embeddings, reaching <strong class="metric">~86.4% accuracy and 0.950 ROC-AUC</strong>; served inference via a FastAPI/Uvicorn API with rigorous model evaluation.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row">
+      <span class="title">AI Job Finder Agent</span>
+      <span class="meta">n8n · AI Agents · REST APIs · Ollama · Qwen 2.5 1.5B · JSON</span>
+    </div>
+    <ul>
+      <li>Architected an AI-agent pipeline that turns natural-language job preferences into ranked matches: searches live public job APIs, retrieves and deduplicates listings, and evaluates each posting against user criteria with a locally hosted LLM (Qwen 2.5 1.5B via Ollama).</li>
+      <li>Returns structured JSON rankings of suitable opportunities; processed <strong class="metric">275 listings → 271 after deduplication → 6 final matches</strong>, built entirely on free/local tooling with no paid API keys.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row">
+      <span class="title">AI Call Center — Voice AI / Conversational AI</span>
+      <span class="meta">Python · Twilio · Speech-to-Text · LLM · Text-to-Speech</span>
+    </div>
+    <ul>
+      <li>Built an AI-powered call-center system integrating speech-to-text, LLM-driven conversational intelligence, and text-to-speech over Twilio telephony for real-time voice interaction, automated customer interaction, and call routing.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row">
+      <span class="title">Inventory Forecasting &amp; Predictive Analysis</span>
+      <span class="meta">Python · Pandas · NumPy · scikit-learn</span>
+    </div>
+    <ul>
+      <li>Developed an applied ML / predictive-analytics system for multi-outlet retail businesses, forecasting product demand from current and historical inventory/sales data and identifying fast-moving products and sell-out risk.</li>
+      <li>Applied feature engineering and supervised learning to generate outlet-specific recommendations on which products to stock or drop per outlet, supporting inventory planning and demand forecasting.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row">
+      <span class="title">Microsoft Copilot Studio — Enterprise AI (Ongoing)</span>
+      <span class="meta">Conversational AI · Workflow Automation</span>
+    </div>
+    <ul>
+      <li>Currently building AI copilots for enterprise scenarios — conversational AI assistants and AI-assisted business-process/workflow automation within Microsoft Copilot Studio.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row">
+      <span class="title">Additional Projects</span>
+      <span class="meta">MERN · C++ · Flutter</span>
+    </div>
+    <ul class="mini">
+      <li><b>SoleMate</b> — full-stack MERN e-commerce shoe store (React, Node.js, Express, MongoDB)</li>
+      <li><b>C++ Space Shooter</b> — single-file arcade game built in C++</li>
+      <li><b>Campus Companion</b> — Flutter/Dart mobile campus companion application</li>
+    </ul>
+  </div>
+</section>
+
+<section aria-label="Education">
+  <h2>Education</h2>
+  <div class="entry">
+    <div class="row">
+      <span class="title">BS Software Engineering — <span class="subtle">Riphah International University</span></span>
+      <span class="meta">Expected Graduation: 2027</span>
+    </div>
+  </div>
+</section>
+
+<section aria-label="Certifications and AI Training">
+  <h2>Certifications / AI Training</h2>
+  <ul class="mini">
+    <li><b>Anthropic</b> — 20 AI/Claude-focused courses spanning AI, LLMs, prompt engineering, and AI application development</li>
+    <li><b>IBM SkillsBuild</b> — Artificial Intelligence Fundamentals</li>
+    <li><b>Cisco</b> — AI Fundamentals</li>
+  </ul>
+</section>
+
+</body>
+</html>

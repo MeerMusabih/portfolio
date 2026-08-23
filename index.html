@@ -1,18 +1,488 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meer Musabih | Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+  <!-- SEO -->
+  <title>Meer Musabih | AI/ML &amp; Software Engineering Portfolio</title>
+  <meta name="description" content="Meer Musabih is a BS Software Engineering student and ML Intern building practical systems in machine learning, generative AI, AI agents, predictive analytics, NLP, and software engineering.">
+  <meta name="author" content="Meer Musabih Saleem">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Meer Musabih | AI/ML &amp; Software Engineering Portfolio">
+  <meta property="og:description" content="BS Software Engineering student and ML Intern building practical systems in machine learning, generative AI, AI agents, predictive analytics, NLP, and software engineering.">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23111827'/%3E%3Ctext x='32' y='43' font-family='Arial' font-size='34' font-weight='bold' fill='%232563EB' text-anchor='middle'%3Em%3C/text%3E%3C/svg%3E">
+
+  <!-- Identity kit fonts: Space Grotesk (headings) + Inter (body) + Plex Mono (data) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:ital,wght@0,400;0,500;0,600;1,400&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Meer Musabih</h1>
-    <p>AI Engineer • Software Engineer</p>
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-inner">
+      <nav aria-label="Main navigation">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link">home</a></li>
+          <li><a href="#about" class="nav-link">about</a></li>
+          <li><a href="#experience" class="nav-link">experience</a></li>
+          <li><a href="#projects" class="nav-link">projects</a></li>
+          <li><a href="#skills" class="nav-link">skills</a></li>
+          <li><a href="#contact" class="nav-link">contact</a></li>
+        </ul>
+      </nav>
 
-    <script src="script.js"></script>
+      <a href="#projects" class="nav-cta">view my work <span aria-hidden="true">&rarr;</span></a>
 
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu"
+              aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ======================= HERO ======================= -->
+    <section class="hero" id="home">
+      <div class="container">
+        <p class="hello reveal">Hello, I'm</p>
+        <h1 class="hero-name reveal">Meer Musabih</h1>
+        <p class="role-line reveal">AI &amp; Software Engineer</p>
+
+        <p class="status reveal">BS Software Engineering &middot; ML Intern @ FlyRank AI &middot; AI/ML</p>
+
+        <p class="lede reveal">
+          Software engineering student, machine learning intern. I work on ranking models,
+          NLP classifiers, LLM-powered agents, voice interfaces, and demand forecasting &mdash;
+          taking problems from raw data to measured results.
+        </p>
+
+        <div class="hero-actions reveal">
+          <a class="btn btn-solid" href="#projects">Explore my work</a>
+          <!-- PLACEHOLDER: replace YOUR_CV_URL_HERE with the real CV link -->
+          <a class="btn btn-outline" href="YOUR_CV_URL_HERE" target="_blank" rel="noopener">View CV</a>
+          <span class="hero-meta">
+            <a href="https://github.com/MeerMusabih" target="_blank" rel="noopener">github</a>
+            <a href="https://www.linkedin.com/in/meer-musabih" target="_blank" rel="noopener">linkedin</a>
+            <a href="mailto:meermusabih.work@gmail.com">email</a>
+          </span>
+        </div>
+
+        <!-- Actual run summary from the FlyRank internship capstone -->
+        <figure class="runlog reveal">
+          <figcaption>flyrank / content-refresh ranker &mdash; run summary</figcaption>
+<pre>model          RandomForestClassifier
+trees          300                class_weight   balanced
+split          client_grouped     leakage_checks passed
+records        ~30,000 pages      features       44 -&gt; 32
+
+precision@20   0.70               baseline 0.40
+precision@50   0.68               baseline 0.36
+output         ranked review queue &middot; priority tiers + reason codes</pre>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ======================= ABOUT ======================= -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-num">01</span>
+          <h2>About Me</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="prose reveal">
+            <p>
+              I'm Meer Musabih Saleem, a BS Software Engineering student at Riphah International
+              University (class of 2027), currently doing machine learning internship work at FlyRank AI.
+            </p>
+            <p>
+              Most of what I know about AI came from building things rather than reading about them:
+              a Random Forest model that ranks pages for content-refresh review, an n8n agent that scores
+              job listings with a local LLM, a Twilio call center that listens, thinks, and talks back,
+              and forecasting tools for multi-outlet retail. In between: MERN apps, a Flutter campus app,
+              and a space shooter in a single C++ file.
+            </p>
+            <p>
+              The pattern I keep coming back to &mdash; frame the question, get the data honest, build the
+              smallest thing that answers it, then measure whether it actually worked.
+            </p>
+          </div>
+
+          <dl class="facts reveal">
+            <div><dt>Degree</dt><dd>BS Software Engineering</dd></div>
+            <div><dt>University</dt><dd>Riphah International University</dd></div>
+            <div><dt>Graduation</dt><dd>2027, expected</dd></div>
+            <div><dt>Now</dt><dd>ML Intern, FlyRank AI</dd></div>
+            <div><dt>Focus</dt><dd>ML &middot; GenAI &middot; agents &middot; NLP &middot; analytics</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= EXPERIENCE ======================= -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-num">02</span>
+          <h2>Experience</h2>
+        </div>
+
+        <article class="xp reveal">
+          <header class="xp-head">
+            <h3>FlyRank AI <span class="xp-role">&mdash; Machine Learning Intern</span></h3>
+            <p class="xp-note">hands-on ML on production search data</p>
+          </header>
+
+          <p class="xp-summary">
+            My work centred on one question from the business side: which pages deserve a human's
+            attention for a content refresh? I framed it as a ranking problem, engineered the feature
+            set, trained and evaluated the model, and turned its output into something reviewers
+            could actually work through.
+          </p>
+
+          <div class="capstone">
+            <h4>Content Refresh Prioritization <span class="tag">capstone</span></h4>
+            <p class="rq">
+              Can observed content and search-performance signals rank pages by priority
+              for human refresh review?
+            </p>
+
+            <div class="cap-cols">
+              <div>
+                <h5>Data</h5>
+                <ul class="plain-list">
+                  <li>FlyRank internship warehouse, July 2026 release</li>
+                  <li>~30,000 content-page records</li>
+                  <li>44 original columns &rarr; 32 modeling features</li>
+                  <li>Numeric and categorical signals combined</li>
+                </ul>
+
+                <h5>Method</h5>
+                <ul class="plain-list">
+                  <li>Random Forest Classifier &mdash; 300 trees, class-balanced</li>
+                  <li>Client-grouped train/test split; no client leakage</li>
+                  <li>Feature engineering; target/leakage variables excluded</li>
+                  <li>Ranking-oriented evaluation (Precision@K)</li>
+                </ul>
+              </div>
+
+              <div>
+                <h5>Results &mdash; Precision@K</h5>
+                <table class="metrics">
+                  <thead>
+                    <tr><th scope="col">model</th><th scope="col">P@20</th><th scope="col">P@50</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr class="hl"><td>random forest</td><td><strong>0.70</strong></td><td><strong>0.68</strong></td></tr>
+                    <tr><td>rule-based baseline</td><td>0.40</td><td>0.36</td></tr>
+                    <tr class="delta"><td>improvement</td><td>+0.30</td><td>+0.32</td></tr>
+                  </tbody>
+                </table>
+
+                <h5>Strongest signals</h5>
+                <p class="signals">
+                  impressions (90d) &middot; avg. search position &middot; days with impressions &middot;
+                  content age &middot; character count &middot; word count &middot; ctr &middot;
+                  pageviews (90d) &middot; scroll rate &middot; days with sessions
+                </p>
+              </div>
+            </div>
+
+            <p class="cap-output">
+              Predictions ship as a ranked review queue with priority tiers and reason codes,
+              so reviewers start with the pages most worth their time.
+            </p>
+
+            <p class="note">
+              This is a decision-support ranking system. It does not claim that refreshing a page will
+              automatically improve SEO &mdash; humans make the final call.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ======================= AI AGENTS ======================= -->
+    <section class="section" id="agents">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-num">03</span>
+          <h2>AI Agents &amp; Automation</h2>
+        </div>
+
+        <article class="agent reveal">
+          <header class="xp-head">
+            <h3>AI Job Finder Agent <span class="tag">n8n &middot; local llm</span></h3>
+          </header>
+
+          <p class="agent-desc">
+            An agent workflow that takes job preferences in plain language and turns them into a short,
+            ranked list of suitable openings &mdash; searching live public job APIs, cleaning up duplicates,
+            and letting a locally hosted LLM do the judging.
+          </p>
+
+          <ol class="pipeline">
+            <li>preferences in natural language</li>
+            <li>job API search</li>
+            <li>listing retrieval</li>
+            <li>deduplication</li>
+            <li>llm evaluation vs preferences</li>
+            <li>ranking</li>
+            <li>structured json out</li>
+          </ol>
+
+          <p class="run-note">
+            one run: <strong>275</strong> listings retrieved &rarr; <strong>271</strong> after dedup
+            &rarr; <strong>6</strong> returned as matches
+          </p>
+          <p class="tech">n8n &nbsp;/&nbsp; ai agents &nbsp;/&nbsp; rest apis &nbsp;/&nbsp; ollama &nbsp;/&nbsp; qwen 2.5 1.5b &nbsp;/&nbsp; json</p>
+
+          <p class="note">
+            Built entirely on free and local tooling &mdash; no paid API keys. It ranks and returns;
+            it does not apply to jobs on anyone's behalf.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ======================= AI/ML PROJECTS ======================= -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-num">04</span>
+          <h2>AI / ML Projects</h2>
+        </div>
+
+        <div class="proj-list">
+
+          <article class="proj reveal">
+            <span class="proj-num" aria-hidden="true">a</span>
+            <div class="proj-body">
+              <h3>PersonaGuard AI <span class="proj-sub">recruitment intelligence</span></h3>
+              <p>
+                Analyzes publicly available social-media information to support recruitment screening.
+                A logistic regression toxicity classifier over Sentence Transformer embeddings, served
+                through FastAPI/Uvicorn &mdash; my first end-to-end NLP system, evaluated properly.
+              </p>
+              <p class="metric-line"><strong>86.4%</strong> accuracy &nbsp;&middot;&nbsp; <strong>0.950</strong> ROC-AUC</p>
+              <p class="tech">python / nlp / logistic regression / sentence transformers / fastapi / uvicorn</p>
+            </div>
+          </article>
+
+          <article class="proj reveal">
+            <span class="proj-num" aria-hidden="true">b</span>
+            <div class="proj-body">
+              <h3>AI Call Center <span class="proj-sub">voice ai</span></h3>
+              <p>
+                An automated caller built on Twilio: speech-to-text brings the caller's words in,
+                an LLM decides what to say, text-to-speech says it &mdash; with routing handled along
+                the way. Real conversation loop, live over a phone line.
+              </p>
+              <p class="tech">python / twilio / speech-to-text / llm / text-to-speech</p>
+            </div>
+          </article>
+
+          <article class="proj reveal">
+            <span class="proj-num" aria-hidden="true">c</span>
+            <div class="proj-body">
+              <h3>Inventory Forecasting <span class="proj-sub">predictive analytics</span></h3>
+              <p>
+                For businesses running multiple outlets (supermarkets and the like): mine current and
+                historical inventory/sales data to forecast demand, flag fast movers and sell-out risk,
+                and recommend what each outlet should and shouldn't stock.
+              </p>
+              <p class="tech">python / pandas / numpy / scikit-learn / forecasting / feature engineering</p>
+            </div>
+          </article>
+
+          <article class="proj reveal">
+            <span class="proj-num" aria-hidden="true">d</span>
+            <div class="proj-body">
+              <h3>Microsoft Copilot Studio <span class="proj-sub">ongoing</span></h3>
+              <p>
+                Currently working through enterprise copilots: conversational assistants and
+                business-process automation inside Microsoft's platform. Learning how AI gets deployed
+                where non-engineers depend on it.
+              </p>
+              <p class="tech">copilot studio / conversational ai / workflow automation</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= SOFTWARE PROJECTS ======================= -->
+    <section class="section" id="software">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-num">05</span>
+          <h2>Software Engineering Projects</h2>
+        </div>
+
+        <div class="soft-list reveal">
+          <div class="soft-item">
+            <h3>SoleMate</h3>
+            <p>MERN shoe e-commerce &mdash; catalog, cart, checkout, the full stack.</p>
+            <p class="tech">react / node.js / express / mongodb / redux</p>
+          </div>
+          <div class="soft-item">
+            <h3>Campus Companion</h3>
+            <p>Cross-platform mobile companion app for campus life.</p>
+            <p class="tech">flutter / dart</p>
+          </div>
+          <div class="soft-item">
+            <h3>C++ Space Shooter</h3>
+            <p>A playable shooter in a single C++ file. Fundamentals, game loops, collisions.</p>
+            <p class="tech">c++</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= SKILLS ======================= -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-num">06</span>
+          <h2>Technical Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+          <section class="skill-group reveal">
+            <h3>AI &amp; Machine Learning</h3>
+            <p>machine learning &middot; predictive analytics &middot; nlp &middot; classification &middot; ranking models &middot;
+               feature engineering &middot; model evaluation &middot; generative ai &middot; llm applications &middot;
+               ai agents &middot; conversational ai &middot; voice ai</p>
+          </section>
+
+          <section class="skill-group reveal">
+            <h3>Python &amp; ML Stack</h3>
+            <p>python &middot; pandas &middot; numpy &middot; scikit-learn &middot; fastapi</p>
+          </section>
+
+          <section class="skill-group reveal">
+            <h3>LLMs &amp; AI Platforms</h3>
+            <p>ollama &middot; qwen &middot; llama &middot; anthropic / claude &middot; microsoft copilot studio &middot; n8n</p>
+          </section>
+
+          <section class="skill-group reveal">
+            <h3>Software Development</h3>
+            <p>c++ &middot; javascript &middot; react &middot; node.js &middot; express &middot; mongodb &middot; redux &middot;
+               flutter &middot; dart &middot; git &middot; github &middot; rest apis &middot; json</p>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= EDUCATION & CERTIFICATIONS ======================= -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-num">07</span>
+          <h2>Education &amp; Certifications</h2>
+        </div>
+
+        <div class="edu-grid">
+          <div class="edu reveal">
+            <h3>Riphah International University</h3>
+            <p>BS Software Engineering &mdash; expected graduation <strong>2027</strong></p>
+          </div>
+
+          <div class="certs reveal">
+            <h3 class="sr-only">Certifications and AI training</h3>
+            <div class="cert-row">
+              <p class="cert-org">Anthropic</p>
+              <p class="cert-title">20 AI/Claude-focused courses</p>
+            </div>
+            <div class="cert-row">
+              <p class="cert-org">IBM SkillsBuild</p>
+              <p class="cert-title">Artificial Intelligence Fundamentals</p>
+            </div>
+            <div class="cert-row">
+              <p class="cert-org">Cisco</p>
+              <p class="cert-title">AI Fundamentals</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= CONTACT ======================= -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-num">08</span>
+          <h2>Let's Connect</h2>
+        </div>
+
+        <p class="contact-lede reveal">
+          Recruiting for an AI/ML role, exploring a collaboration, or want to argue about
+          ranking metrics? Best reach is email &mdash; I answer fast.
+        </p>
+
+        <div class="contact-list reveal">
+          <a class="contact-row" href="mailto:meermusabih.work@gmail.com">
+            <span class="cc-label">email</span>
+            <span class="cc-value">meermusabih.work@gmail.com</span>
+            <span class="cc-arrow" aria-hidden="true">&rarr;</span>
+          </a>
+          <a class="contact-row" href="https://www.linkedin.com/in/meer-musabih" target="_blank" rel="noopener">
+            <span class="cc-label">linkedin</span>
+            <span class="cc-value">/in/meer-musabih</span>
+            <span class="cc-arrow" aria-hidden="true">&rarr;</span>
+          </a>
+          <a class="contact-row" href="https://github.com/MeerMusabih" target="_blank" rel="noopener">
+            <span class="cc-label">github</span>
+            <span class="cc-value">@MeerMusabih</span>
+            <span class="cc-arrow" aria-hidden="true">&rarr;</span>
+          </a>
+          <!-- PLACEHOLDER: replace YOUR_CV_URL_HERE with the real CV link -->
+          <a class="contact-row" href="YOUR_CV_URL_HERE" target="_blank" rel="noopener">
+            <span class="cc-label">cv</span>
+            <span class="cc-value">r&eacute;sum&eacute; (pdf)</span>
+            <span class="cc-arrow" aria-hidden="true">&rarr;</span>
+          </a>
+          <!-- PLACEHOLDER: replace YOUR_BOOKING_URL_HERE with your booking link, or delete this row -->
+          <a class="contact-row" href="YOUR_BOOKING_URL_HERE" target="_blank" rel="noopener">
+            <span class="cc-label">booking</span>
+            <span class="cc-value">schedule a call</span>
+            <span class="cc-arrow" aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+
+        <p class="soon reveal">
+          More coming soon &mdash; the FlyRank capstone write-up, its official completion badge once approved,
+          new experiments and writing.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="foot-name">Meer Musabih</p>
+        <p class="foot-tag">AI/ML &middot; software engineering &middot; generative AI</p>
+      </div>
+      <div class="foot-links">
+        <a href="https://github.com/MeerMusabih" target="_blank" rel="noopener">github</a>
+        <a href="https://www.linkedin.com/in/meer-musabih" target="_blank" rel="noopener">linkedin</a>
+      </div>
+      <p class="copyright">&copy; <span id="year">2026</span> Meer Musabih</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
