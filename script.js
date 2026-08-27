@@ -90,10 +90,15 @@ if (contactForm) {
   contactForm.addEventListener("submit", async (e) => {
     e.preventDefault(); // stay on the page instead of redirecting
 
+     const submitButton = contactForm.querySelector('button[type="submit"]');
+submitButton.disabled = true;
+submitButton.textContent = "Sending...";
+
     // Endpoint not configured yet — tell the owner instead of failing silently
     if (FORM_ENDPOINT.indexOf("YOUR_") === 0) {
       formStatus.textContent = "Form endpoint is not configured yet — please use the email link above.";
       formStatus.className = "form-status err";
+       
       return;
     }
 
@@ -115,10 +120,14 @@ if (contactForm) {
       } else {
         formStatus.textContent = "Something went wrong. Please email me directly instead.";
         formStatus.className = "form-status err";
+         submitButton.disabled = false;
+submitButton.textContent = "Send Message";
       }
     } catch {
       formStatus.textContent = "Network error. Please email me directly instead.";
       formStatus.className = "form-status err";
+       submitButton.disabled = false;
+submitButton.textContent = "Send Message";
     }
   });
 }
