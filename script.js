@@ -113,11 +113,13 @@ submitButton.textContent = "Sending...";
         body: JSON.stringify(data),
       });
 
-      if (res.ok) {
-        formStatus.textContent = "Message sent \u2014 thank you!";
-        formStatus.className = "form-status ok";
-        contactForm.reset();
-      } else {
+     if (res.ok) {
+  formStatus.textContent = "Message sent — thank you!";
+  formStatus.className = "form-status ok";
+  contactForm.reset();
+  submitButton.disabled = false;
+  submitButton.textContent = "Send Message";
+} else {
         formStatus.textContent = "Something went wrong. Please email me directly instead.";
         formStatus.className = "form-status err";
          submitButton.disabled = false;
